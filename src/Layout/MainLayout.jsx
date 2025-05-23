@@ -4,6 +4,7 @@ import Navber from "../Navber/Navber";
 import Banner from "../pages/Home/Home/Banner/Banner";
 import Professor from "../pages/Home/Professor/Professor";
 import Marquee from "react-fast-marquee";
+import Teacher from "../pages/Home/Teacher/Teacher";
 
 const MainLayout = () => {
   return (
@@ -27,6 +28,7 @@ const MainLayout = () => {
         </Marquee>
       </div>
       <Professor />
+      <Teacher />
       {/* <Footer /> */}
     </div>
   );
