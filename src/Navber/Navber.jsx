@@ -2,13 +2,15 @@ import { FaBook, FaFacebook, FaYoutube } from "react-icons/fa";
 import logo from "../../public/logo.png";
 import { MdEmail, MdLogin } from "react-icons/md";
 import { IoIosArrowDown, IoMdLogIn } from "react-icons/io";
-import l1 from "../../public/l1.jpeg";
-import l2 from "../../public/l2.jpeg";
-import l3 from "../../public/l3.jpeg";
-import l4 from "../../public/l4.jpeg";
-import l5 from "../../public/l5.jpeg";
+import g1 from "../../public/g1.jpg";
+import g2 from "../../public/g2.jpg";
+import g3 from "../../public/g3.jpg";
+import g4 from "../../public/g4.jpg";
+import g5 from "../../public/cart4.jpg";
+import g6 from "../../public/g6.jpg";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router";
+import { FiAlertCircle } from "react-icons/fi";
 
 const Navber = () => {
   return (
@@ -68,7 +70,6 @@ const Navber = () => {
               হোম
             </h2>
           </div>
-
           {/* About Dropdown */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
@@ -79,13 +80,17 @@ const Navber = () => {
             <div className="absolute top-full mt-1 w-[250px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
               <div className="p-[20px] w-full">
                 <h2 className="text-[20px] font-semibold text-[#4c9580] mb-2">
-                  About Menu
+                  আমাদের মেনু
                 </h2>
-                {Array.from({ length: 9 }).map((_, i) => (
-                  <p key={i} className="whitespace-nowrap pb-[10px]">
-                    Lorem menu {i + 1}
-                  </p>
-                ))}
+                <p className="whitespace-nowrap pb-[10px]">আমাদের ইতিহাস</p>
+                <p className="whitespace-nowrap pb-[10px]">মিশন ও ভিশন</p>
+                <p className="whitespace-nowrap pb-[10px]">পরিচালনা পর্ষদ</p>
+                <p className="whitespace-nowrap pb-[10px]">ম্যানেজমেন্ট টিম</p>
+                <p className="whitespace-nowrap pb-[10px]">অংশীদারগণ</p>
+                <p className="whitespace-nowrap pb-[10px]">পরামর্শক</p>
+                <p className="whitespace-nowrap pb-[10px]">অর্জনসমূহ</p>
+                <p className="whitespace-nowrap pb-[10px]">চাকরির সুযোগ</p>
+                <p className="whitespace-nowrap pb-[10px]">যোগাযোগের তথ্য</p>
               </div>
             </div>
           </div>
@@ -98,118 +103,109 @@ const Navber = () => {
             <div className="absolute top-full mt-1 w-[800px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
               <div className="p-[20px] w-full">
                 <div>
-                  <div className="flex gap-[30px] items-center justify-between ">
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Frist Admission
-                    </h2>
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Second Admission
-                    </h2>
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Threed Admission
-                    </h2>
-                  </div>
                   <div className="flex gap-[30px] items-start justify-between mt-[10px]">
-                    {/* About the Organization */}
+                    {/* প্রতিষ্ঠান সম্পর্কে */}
                     <div>
                       <h3 className="text-[#4c9580] font-semibold mb-[12px]">
-                        About the Organization
+                        প্রতিষ্ঠান সম্পর্কে
                       </h3>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> History
+                        <FaBook className="text-[#4c9580]" /> ইতিহাস
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Mission & Vision
+                        <FaBook className="text-[#4c9580]" /> লক্ষ্য ও
+                        দৃষ্টিভঙ্গি
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Board Members
+                        <FaBook className="text-[#4c9580]" /> পরিচালনা পর্ষদ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Management Team
+                        <FaBook className="text-[#4c9580]" /> ব্যবস্থাপনা টিম
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Partners
+                        <FaBook className="text-[#4c9580]" /> অংশীদার
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Advisors
+                        <FaBook className="text-[#4c9580]" /> উপদেষ্টা
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Achievements
+                        <FaBook className="text-[#4c9580]" /> অর্জনসমূহ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Career
-                        Opportunities
+                        <FaBook className="text-[#4c9580]" /> চাকরির সুযোগ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Contact Info
+                        <FaBook className="text-[#4c9580]" /> যোগাযোগের তথ্য
                       </p>
                     </div>
 
-                    {/* Academic Programs */}
+                    {/* একাডেমিক প্রোগ্রাম */}
                     <div>
                       <h3 className="text-[#4c9580] font-semibold mb-[12px]">
-                        Academic Programs
+                        একাডেমিক প্রোগ্রাম
                       </h3>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Departments
+                        <FaBook className="text-[#4c9580]" /> বিভাগসমূহ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Faculties
+                        <FaBook className="text-[#4c9580]" /> অনুষদসমূহ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Courses
+                        <FaBook className="text-[#4c9580]" /> কোর্সসমূহ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Admission Info
+                        <FaBook className="text-[#4c9580]" /> ভর্তি তথ্য
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Exam Routine
+                        <FaBook className="text-[#4c9580]" /> পরীক্ষার রুটিন
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Class Schedule
+                        <FaBook className="text-[#4c9580]" /> ক্লাস সিডিউল
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Grading Policy
+                        <FaBook className="text-[#4c9580]" /> গ্রেডিং নীতি
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Academic Calendar
+                        <FaBook className="text-[#4c9580]" /> একাডেমিক
+                        ক্যালেন্ডার
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Online Library
+                        <FaBook className="text-[#4c9580]" /> অনলাইন লাইব্রেরি
                       </p>
                     </div>
 
-                    {/* Services & Support */}
+                    {/* সেবা ও সহায়তা */}
                     <div>
                       <h3 className="text-[#4c9580] font-semibold mb-[12px]">
-                        Services & Support
+                        সেবা ও সহায়তা
                       </h3>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Student Portal
+                        <FaBook className="text-[#4c9580]" /> শিক্ষার্থী পোর্টাল
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Faculty Portal
+                        <FaBook className="text-[#4c9580]" /> শিক্ষক পোর্টাল
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> IT Helpdesk
+                        <FaBook className="text-[#4c9580]" /> আইটি সহায়তা
+                        কেন্দ্র
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Scholarships
+                        <FaBook className="text-[#4c9580]" /> স্কলারশিপ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Transport
+                        <FaBook className="text-[#4c9580]" /> পরিবহন
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Hostel Services
+                        <FaBook className="text-[#4c9580]" /> হোস্টেল সেবা
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Counseling
+                        <FaBook className="text-[#4c9580]" /> কাউন্সেলিং
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> FAQs
+                        <FaBook className="text-[#4c9580]" /> সাধারণ প্রশ্নোত্তর
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Support Center
+                        <FaBook className="text-[#4c9580]" /> সহায়তা কেন্দ্র
                       </p>
                     </div>
                   </div>
@@ -217,61 +213,41 @@ const Navber = () => {
               </div>
             </div>
           </div>
-
           {/* ===> feature <=== */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
               বৈশিষ্ট্য <IoIosArrowDown />
             </h2>
 
-            <div className="absolute top-full left-0 mt-1 w-[850px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
+            <div className="absolute top-full left-0 mt-1 w-[850px] ml-[-200px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
               <div className="p-[20px] w-full">
                 <div>
-                  <div className="flex gap-[30px] items-center justify-between ">
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Frist Admission
-                    </h2>
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Second Admission
-                    </h2>
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Threed Admission
-                    </h2>
-                  </div>
                   <div className="flex gap-[30px] items-start justify-between mt-[10px]">
-                    {/* About the Organization */}
+                    {/* প্রতিষ্ঠান সম্পর্কে */}
                     <div>
                       <h3 className="text-[#4c9580] font-semibold mb-[12px]">
-                        About the Organization
+                        প্রতিষ্ঠান সম্পর্কে
                       </h3>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aliquid eum officiis doloremque saepe dolor ut
-                        facere, quasi iste nisi amet, similique omnis quam?
-                        Tempora minima dolorem, eius excepturi distinctio
-                        dolorum autem fugit harum voluptatem, illum quaerat.
-                        Omnis hic saepe quis nesciunt blanditiis corporis nobis
-                        iure ad porro deserunt autem ipsum provident nemo,
-                        laboriosam perspiciatis ex consequatur eveniet. Beatae
-                        cupiditate hic dolorem similique aliquam, tenetur,
-                        adipisci quod dicta ab inventore tempora et harum nob
-                        assumenda minima in!
+                        আমাদের প্রতিষ্ঠান একটি সুপ্রতিষ্ঠিত শিক্ষা কেন্দ্র যা
+                        দীর্ঘদিন ধরে মানসম্মত শিক্ষা প্রদান করে আসছে। আমরা
+                        প্রতিটি শিক্ষার্থীর সম্ভাবনা বিকাশে অঙ্গীকারবদ্ধ। আধুনিক
+                        প্রযুক্তি ও মানবিক মূল্যবোধের সমন্বয়ে গড়ে তোলা হয়েছে
+                        আমাদের শিক্ষার পরিকাঠামো।
                       </p>
                     </div>
 
-                    {/* Academic Programs */}
+                    {/* একাডেমিক প্রোগ্রাম */}
                     <div>
                       <h3 className="text-[#4c9580] font-semibold mb-[12px]">
-                        Academic Programs
+                        একাডেমিক প্রোগ্রাম
                       </h3>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Pariatur laboriosam doloribus sit quos neque ut,
-                        aut expedita totam tenetur corrupti ab ipsum officia
-                        incidunt odit aperiam quis facilis animi nesciunt a,
-                        dolore similique! Ratione saepe alias et praesentium
-                        nobis. Cum, architecto error. Esse libero, explicabo
-                        sint accusantium ipsam amet, veniam qui eveniet
+                        আমাদের একাডেমিক প্রোগ্রাম সমূহ অত্যন্ত বৈচিত্র্যপূর্ণ ও
+                        গুণগত মানসম্পন্ন। এখানে রয়েছে বিজ্ঞান, মানবিক, ও ব্যবসায়
+                        শিক্ষা বিভাগের বিভিন্ন কোর্স। পাঠ্যক্রমের পাশাপাশি
+                        শিক্ষার্থীদের সহশিক্ষা কার্যক্রমে অংশগ্রহণের সুযোগও
+                        প্রদান করা হয়।
                       </p>
                     </div>
                   </div>
@@ -288,13 +264,23 @@ const Navber = () => {
             <div className="absolute top-full mt-1 w-[250px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
               <div className="p-[20px] w-full">
                 <h2 className="text-[20px] font-semibold text-[#4c9580] mb-2">
-                  About Menu
+                  প্রতিষ্ঠান মেনু
                 </h2>
-                {Array.from({ length: 9 }).map((_, i) => (
-                  <p key={i} className="whitespace-nowrap pb-[10px]">
-                    Lorem menu {i + 1}
-                  </p>
-                ))}
+                <p className="whitespace-nowrap pb-[10px]">
+                  প্রতিষ্ঠান পরিচিতি
+                </p>
+                <p className="whitespace-nowrap pb-[10px]">
+                  আমাদের লক্ষ্য ও উদ্দেশ্য
+                </p>
+                <p className="whitespace-nowrap pb-[10px]">অধ্যক্ষের বাণী</p>
+                <p className="whitespace-nowrap pb-[10px]">শিক্ষকবৃন্দ</p>
+                <p className="whitespace-nowrap pb-[10px]">পরিচালনা পর্ষদ</p>
+                <p className="whitespace-nowrap pb-[10px]">
+                  প্রতিষ্ঠানের ইতিহাস
+                </p>
+                <p className="whitespace-nowrap pb-[10px]">অবকাঠামো ও পরিবেশ</p>
+                <p className="whitespace-nowrap pb-[10px]">সাফল্য ও অর্জন</p>
+                <p className="whitespace-nowrap pb-[10px]">যোগাযোগ</p>
               </div>
             </div>
           </div>
@@ -307,17 +293,17 @@ const Navber = () => {
             <div className="absolute top-full mt-1 w-[500px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
               <div className="p-[20px] w-full">
                 <h2 className="text-[20px] font-semibold text-[#4c9580] mb-2">
-                  About Menu
+                  কেন্দ্র সম্পর্কিত তথ্য
                 </h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Expedita, quas corporis reiciendis nemo fuga similique tenetur
-                  molestiae eveniet nulla magni quia minus vero omnis quaerat,
+                <p className="mb-2">
+                  আমাদের প্রতিটি কেন্দ্র শিক্ষার্থীদের জন্য আধুনিক সুযোগ-সুবিধা
+                  সমৃদ্ধ পরিবেশে পরিচালিত হয়, যেখানে মানসম্মত শিক্ষা প্রদান
+                  নিশ্চিত করা হয়।
                 </p>
                 <p>
-                  {" "}
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  quam. consectetur velit. Optio, fugit aliquid!
+                  প্রতিটি কেন্দ্রেই প্রশিক্ষিত শিক্ষক, নিরবিচার ক্লাসরুম এবং
+                  প্রযুক্তি নির্ভর পাঠদান ব্যবস্থা রয়েছে, যা শিক্ষার্থীদের
+                  সার্বিক উন্নয়নে সহায়ক ভূমিকা রাখে।
                 </p>
               </div>
             </div>
@@ -328,121 +314,112 @@ const Navber = () => {
               বিভাগ <IoIosArrowDown />
             </h2>
 
-            <div className="absolute top-full mt-1 w-[800px] -ml-[500px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
+            <div className="absolute top-full mt-1 w-[800px] ml-[-400px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
               <div className="p-[20px] w-full">
                 <div>
-                  <div className="flex gap-[30px] items-center justify-between ">
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Frist Admission
-                    </h2>
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Second Admission
-                    </h2>
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Threed Admission
-                    </h2>
-                  </div>
                   <div className="flex gap-[30px] items-start justify-between mt-[10px]">
-                    {/* About the Organization */}
+                    {/* প্রতিষ্ঠান সম্পর্কে */}
                     <div>
                       <h3 className="text-[#4c9580] font-semibold mb-[12px]">
-                        About the Organization
+                        প্রতিষ্ঠান সম্পর্কে
                       </h3>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> History
+                        <FaBook className="text-[#4c9580]" /> ইতিহাস
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Mission & Vision
+                        <FaBook className="text-[#4c9580]" /> লক্ষ্য ও
+                        দৃষ্টিভঙ্গি
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Board Members
+                        <FaBook className="text-[#4c9580]" /> পরিচালনা পর্ষদ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Management Team
+                        <FaBook className="text-[#4c9580]" /> ব্যবস্থাপনা টিম
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Partners
+                        <FaBook className="text-[#4c9580]" /> অংশীদার
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Advisors
+                        <FaBook className="text-[#4c9580]" /> উপদেষ্টা
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Achievements
+                        <FaBook className="text-[#4c9580]" /> অর্জনসমূহ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Career
-                        Opportunities
+                        <FaBook className="text-[#4c9580]" /> চাকরির সুযোগ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Contact Info
+                        <FaBook className="text-[#4c9580]" /> যোগাযোগের তথ্য
                       </p>
                     </div>
 
-                    {/* Academic Programs */}
+                    {/* একাডেমিক প্রোগ্রাম */}
                     <div>
                       <h3 className="text-[#4c9580] font-semibold mb-[12px]">
-                        Academic Programs
+                        একাডেমিক প্রোগ্রাম
                       </h3>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Departments
+                        <FaBook className="text-[#4c9580]" /> বিভাগসমূহ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Faculties
+                        <FaBook className="text-[#4c9580]" /> অনুষদসমূহ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Courses
+                        <FaBook className="text-[#4c9580]" /> কোর্সসমূহ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Admission Info
+                        <FaBook className="text-[#4c9580]" /> ভর্তি তথ্য
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Exam Routine
+                        <FaBook className="text-[#4c9580]" /> পরীক্ষার রুটিন
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Class Schedule
+                        <FaBook className="text-[#4c9580]" /> ক্লাস সিডিউল
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Grading Policy
+                        <FaBook className="text-[#4c9580]" /> গ্রেডিং নীতি
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Academic Calendar
+                        <FaBook className="text-[#4c9580]" /> একাডেমিক
+                        ক্যালেন্ডার
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Online Library
+                        <FaBook className="text-[#4c9580]" /> অনলাইন লাইব্রেরি
                       </p>
                     </div>
 
-                    {/* Services & Support */}
+                    {/* সেবা ও সহায়তা */}
                     <div>
                       <h3 className="text-[#4c9580] font-semibold mb-[12px]">
-                        Services & Support
+                        সেবা ও সহায়তা
                       </h3>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Student Portal
+                        <FaBook className="text-[#4c9580]" /> শিক্ষার্থী পোর্টাল
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Faculty Portal
+                        <FaBook className="text-[#4c9580]" /> শিক্ষক পোর্টাল
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> IT Helpdesk
+                        <FaBook className="text-[#4c9580]" /> আইটি সহায়তা
+                        কেন্দ্র
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Scholarships
+                        <FaBook className="text-[#4c9580]" /> স্কলারশিপ
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Transport
+                        <FaBook className="text-[#4c9580]" /> পরিবহন
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Hostel Services
+                        <FaBook className="text-[#4c9580]" /> হোস্টেল সেবা
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Counseling
+                        <FaBook className="text-[#4c9580]" /> কাউন্সেলিং
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> FAQs
+                        <FaBook className="text-[#4c9580]" /> সাধারণ প্রশ্নোত্তর
                       </p>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        <FaBook className="text-[#4c9580]" /> Support Center
+                        <FaBook className="text-[#4c9580]" /> সহায়তা কেন্দ্র
                       </p>
                     </div>
                   </div>
@@ -456,54 +433,35 @@ const Navber = () => {
               গবেষণা <IoIosArrowDown />
             </h2>
 
-            <div className="absolute top-full left-0 mt-1 w-[850px] ml-[-500px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
+            <div className="absolute top-full left-0 mt-1 w-[850px] ml-[-600px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
               <div className="p-[20px] w-full">
                 <div>
-                  <div className="flex gap-[30px] items-center justify-between ">
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Frist Admission
-                    </h2>
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Second Admission
-                    </h2>
-                    <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                      Threed Admission
-                    </h2>
-                  </div>
                   <div className="flex gap-[30px] items-start justify-between mt-[10px]">
-                    {/* About the Organization */}
+                    {/* প্রতিষ্ঠান সম্পর্কে */}
                     <div>
                       <h3 className="text-[#4c9580] font-semibold mb-[12px]">
-                        About the Organization
+                        প্রতিষ্ঠান সম্পর্কে
                       </h3>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aliquid eum officiis doloremque saepe dolor ut
-                        facere, quasi iste nisi amet, similique omnis quam?
-                        Tempora minima dolorem, eius excepturi distinctio
-                        dolorum autem fugit harum voluptatem, illum quaerat.
-                        Omnis hic saepe quis nesciunt blanditiis corporis nobis
-                        iure ad porro deserunt autem ipsum provident nemo,
-                        laboriosam perspiciatis ex consequatur eveniet. Beatae
-                        cupiditate hic dolorem similique aliquam, tenetur,
-                        adipisci quod dicta ab inventore tempora et harum nob
-                        assumenda minima in!
+                        আমাদের প্রতিষ্ঠান একটি সুপ্রতিষ্ঠিত শিক্ষা কেন্দ্র যা
+                        দীর্ঘদিন ধরে মানসম্মত শিক্ষা প্রদান করে আসছে। আমরা
+                        প্রতিটি শিক্ষার্থীর সম্ভাবনা বিকাশে অঙ্গীকারবদ্ধ। আধুনিক
+                        প্রযুক্তি ও মানবিক মূল্যবোধের সমন্বয়ে গড়ে তোলা হয়েছে
+                        আমাদের শিক্ষার পরিকাঠামো।
                       </p>
                     </div>
 
-                    {/* Academic Programs */}
+                    {/* একাডেমিক প্রোগ্রাম */}
                     <div>
                       <h3 className="text-[#4c9580] font-semibold mb-[12px]">
-                        Academic Programs
+                        একাডেমিক প্রোগ্রাম
                       </h3>
                       <p className="flex gap-[4px] items-center mb-[10px]">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Pariatur laboriosam doloribus sit quos neque ut,
-                        aut expedita totam tenetur corrupti ab ipsum officia
-                        incidunt odit aperiam quis facilis animi nesciunt a,
-                        dolore similique! Ratione saepe alias et praesentium
-                        nobis. Cum, architecto error. Esse libero, explicabo
-                        sint accusantium ipsam amet, veniam qui eveniet
+                        আমাদের একাডেমিক প্রোগ্রাম সমূহ অত্যন্ত বৈচিত্র্যপূর্ণ ও
+                        গুণগত মানসম্পন্ন। এখানে রয়েছে বিজ্ঞান, মানবিক, ও ব্যবসায়
+                        শিক্ষা বিভাগের বিভিন্ন কোর্স। পাঠ্যক্রমের পাশাপাশি
+                        শিক্ষার্থীদের সহশিক্ষা কার্যক্রমে অংশগ্রহণের সুযোগও
+                        প্রদান করা হয়।
                       </p>
                     </div>
                   </div>
@@ -514,25 +472,13 @@ const Navber = () => {
           {/* ===> Library <=== */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
-              লাইব্রেরি <IoIosArrowDown />
+              গ্যালারি <IoIosArrowDown />
             </h2>
 
             <div className="absolute top-full left-0 mt-1 w-[850px] ml-[-700px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
               <div className="p-[20px] w-full ">
-                <div className="flex gap-[30px] items-center justify-between ">
-                  <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                    Frist Admission
-                  </h2>
-                  <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                    Second Admission
-                  </h2>
-                  <h2 className="text-[20px] font-semibold text-[#4c9580] border-b border-gray-300">
-                    Threed Admission
-                  </h2>
-                </div>
-
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
-                  {[l1, l2, l3, l4, l5, l1]?.map((item) => (
+                  {[g1, g2, g3, g4, g5, g6]?.map((item) => (
                     <div className="h-[150px]">
                       <img className="h-full w-full" src={item} alt="l1" />
                     </div>
@@ -542,17 +488,31 @@ const Navber = () => {
             </div>
           </div>
           {/* Notice Dropdown */}
+
           <div className="relative group inline-block">
-            <h2 className="flex items-center gap-[4px] cursor-pointe font-semibold">
+            <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
               নোটিশ <IoIosArrowDown />
             </h2>
 
             <div className="absolute top-full mt-1 w-[550px] ml-[-500px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
               <div className="p-[20px] w-full">
-                {Array.from({ length: 9 }).map((_, i) => (
-                  <p key={i} className="whitespace-nowrap pb-[10px]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Voluptates, suscipit?
+                {[
+                  "ভর্তি ফরম জমার শেষ তারিখ ৩০ জুন ২০২৫।",
+                  "শিক্ষার্থীদের জন্য নতুন ক্লাস রুটিন প্রকাশিত হয়েছে।",
+                  "পরীক্ষার সময়সূচি ওয়েবসাইটে আপলোড করা হয়েছে।",
+                  "শিক্ষার্থীদের ইউনিফর্ম পরিধান বাধ্যতামূলক।",
+                  "আগামী শুক্রবার সকল ক্লাস বন্ধ থাকবে।",
+                  "অভিভাবক সভা আগামী সপ্তাহে অনুষ্ঠিত হবে।",
+                  "লাইব্রেরি সকাল ৯টা থেকে বিকাল ৪টা পর্যন্ত খোলা থাকবে।",
+                  "নতুন পাঠ্যবই বিতরণ শুরু হয়েছে।",
+                  "অনলাইন অ্যাসাইনমেন্ট জমা দেওয়ার সময় বাড়ানো হয়েছে।",
+                ].map((notice, i) => (
+                  <p
+                    key={i}
+                    className="flex items-start gap-2 pb-[10px] text-sm hover:text-[#4c9580] transition-colors duration-200"
+                  >
+                    <FiAlertCircle className="text-[#4c9580] mt-[3px]" />
+                    {notice}
                   </p>
                 ))}
               </div>
