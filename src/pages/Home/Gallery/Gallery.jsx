@@ -6,6 +6,7 @@ import g4 from "../../../../public/g4.jpg";
 import g5 from "../../../../public/g5.jpg";
 import g6 from "../../../../public/g6.jpg";
 import GalleryCart from "../../../Component/GalleryCart/GalleryCart";
+import Animation from "../../../Component/Animation/Animation";
 
 const Gallery = () => {
   return (
@@ -30,7 +31,10 @@ const Gallery = () => {
           { id: 5, img: g5 },
           { id: 6, img: g6 },
         ]?.map((item) => (
-          <GalleryCart item={item} />
+          <Animation>
+            {" "}
+            <GalleryCart item={item} />
+          </Animation>
         ))}
       </div>
     </div>

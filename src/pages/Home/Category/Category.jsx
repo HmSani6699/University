@@ -4,6 +4,7 @@ import image3 from "../../../../public/category3.png";
 import image4 from "../../../../public/categor4.png";
 import image5 from "../../../../public/category5.png";
 import image6 from "../../../../public/category6.png";
+import Animation from "../../../Component/Animation/Animation";
 
 const Category = () => {
   const cardData = [
@@ -72,26 +73,28 @@ const Category = () => {
     <div className="bg-[#4c9580]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  py-[50px] max-w-[1200px] mx-auto">
         {cardData.map((card, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-lg shadow-md p-4 border hover:shadow-lg transition duration-300"
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <img
-                src={card.icon}
-                alt="icon"
-                className="w-12 h-12 object-contain"
-              />
-              <h3 className="text-lg font-bold text-gray-800 leading-snug">
-                {card.title}
-              </h3>
+          <Animation>
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-md p-4 border hover:shadow-lg transition duration-300"
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <img
+                  src={card.icon}
+                  alt="icon"
+                  className="w-12 h-12 object-contain"
+                />
+                <h3 className="text-lg font-bold text-gray-800 leading-snug">
+                  {card.title}
+                </h3>
+              </div>
+              <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                {card.items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
             </div>
-            <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm">
-              {card.items.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </div>
+          </Animation>
         ))}
       </div>
     </div>
