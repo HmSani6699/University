@@ -11,6 +11,12 @@
   }
 }
 
+.sticky_navber {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10px; /* required */
+}
+
 /* App.css */
 .custom-swiper-nav .swiper-button-next,
 .custom-swiper-nav .swiper-button-prev {

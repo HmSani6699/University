@@ -13,7 +13,7 @@ import schoo3 from "../../../../../public/school3.jpg";
 
 const Banner = () => {
   return (
-    <div className="w-full h-[200px] ">
+    <div className="w-full h-[500px] ">
       <Swiper
         spaceBetween={30}
         effect={"fade"}

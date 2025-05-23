@@ -50,7 +50,7 @@ const Navber = () => {
         </div>
       </div>
       {/* ====> Main menuber <====== */}
-      <div className="bg-[#4c9580] text-white py-[15px] flex items-center justify-center">
+      <div className="bg-[#4c9580] text-white py-[15px] flex items-center justify-center ">
         <div className="max-w-[1200px] mx-auto flex gap-[30px]">
           {/* Home Dropdown */}
           <div className="relative">
