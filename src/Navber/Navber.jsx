@@ -8,6 +8,7 @@ import l3 from "../../public/l3.jpeg";
 import l4 from "../../public/l4.jpeg";
 import l5 from "../../public/l5.jpeg";
 import Marquee from "react-fast-marquee";
+import { Link } from "react-router";
 
 const Navber = () => {
   return (
@@ -21,24 +22,33 @@ const Navber = () => {
           </div>
           <div>
             <h2 className="text-[#4c9580] font-bold text-[30px] leading-[25px]">
-              SOPTOBORNO MODEL SCHOOL
+              সপ্তবর্ণ মডেল স্কুল
             </h2>
             <h2 className="text-[#4c9580] font-bold text-[20px] ">
-              Dwariapur, Shahzadpur
+              ভেরুয়াদহ, শাহজাদপুর, সিরাজগঞ্জ
             </h2>
           </div>
         </div>
         {/* right */}
         <div className="flex items-center gap-[30px]">
-          <h2 className="flex items-center gap-[6px] text-blue-600">
-            <FaFacebook />
-            Facebook
-          </h2>
+          <Link
+            to={
+              "https://www.facebook.com/soptobornomodelschool?mibextid=ZbWKwL"
+            }
+          >
+            <h2 className="flex items-center gap-[6px] text-blue-600">
+              <FaFacebook />
+              Facebook
+            </h2>
+          </Link>
 
-          <h2 className="flex items-center gap-[6px] text-red-500">
-            <FaYoutube />
-            Youtube
-          </h2>
+          <Link to="https://www.facebook.com/mdmoyeenuddin.02?mibextid=ZbWKwL">
+            {" "}
+            <h2 className="flex items-center gap-[6px] text-red-500">
+              <FaYoutube />
+              Youtube
+            </h2>
+          </Link>
           <h2 className="flex items-center gap-[6px] text-[#4c9580]">
             <MdEmail />
             Web Email
@@ -55,14 +65,15 @@ const Navber = () => {
           {/* Home Dropdown */}
           <div className="relative">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
-              Home
+              হোম
             </h2>
           </div>
 
           {/* About Dropdown */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
-              About <IoIosArrowDown />
+              আমাদের সম্পর্কে
+              <IoIosArrowDown />
             </h2>
 
             <div className="absolute top-full mt-1 w-[250px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
@@ -81,7 +92,7 @@ const Navber = () => {
           {/* admssion */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
-              Admission <IoIosArrowDown />
+              ভর্তি <IoIosArrowDown />
             </h2>
 
             <div className="absolute top-full mt-1 w-[800px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
@@ -210,7 +221,7 @@ const Navber = () => {
           {/* ===> feature <=== */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
-              Feature <IoIosArrowDown />
+              বৈশিষ্ট্য <IoIosArrowDown />
             </h2>
 
             <div className="absolute top-full left-0 mt-1 w-[850px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
@@ -271,7 +282,7 @@ const Navber = () => {
           {/* Instuitutes Dropdown */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
-              Instuitutes <IoIosArrowDown />
+              প্রতিষ্ঠান <IoIosArrowDown />
             </h2>
 
             <div className="absolute top-full mt-1 w-[250px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
@@ -290,7 +301,7 @@ const Navber = () => {
           {/* Center */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
-              Center <IoIosArrowDown />
+              কেন্দ্র <IoIosArrowDown />
             </h2>
 
             <div className="absolute top-full mt-1 w-[500px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
@@ -314,7 +325,7 @@ const Navber = () => {
           {/* admssion */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
-              Deartments <IoIosArrowDown />
+              বিভাগ <IoIosArrowDown />
             </h2>
 
             <div className="absolute top-full mt-1 w-[800px] -ml-[500px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
@@ -442,7 +453,7 @@ const Navber = () => {
           {/* ===> feature <=== */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
-              Research <IoIosArrowDown />
+              গবেষণা <IoIosArrowDown />
             </h2>
 
             <div className="absolute top-full left-0 mt-1 w-[850px] ml-[-500px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
@@ -503,7 +514,7 @@ const Navber = () => {
           {/* ===> Library <=== */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
-              Library <IoIosArrowDown />
+              লাইব্রেরি <IoIosArrowDown />
             </h2>
 
             <div className="absolute top-full left-0 mt-1 w-[850px] ml-[-700px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
@@ -533,7 +544,7 @@ const Navber = () => {
           {/* Notice Dropdown */}
           <div className="relative group inline-block">
             <h2 className="flex items-center gap-[4px] cursor-pointe font-semibold">
-              Notice <IoIosArrowDown />
+              নোটিশ <IoIosArrowDown />
             </h2>
 
             <div className="absolute top-full mt-1 w-[550px] ml-[-500px] origin-top scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100 transition-transform transition-opacity duration-300 ease-in-out bg-white text-black rounded shadow-md z-10">
