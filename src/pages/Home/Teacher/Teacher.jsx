@@ -28,9 +28,9 @@ const Teacher = () => {
             <div className="border  border-gray-300 bg-white shadow-lg rounded-[6px] p-[20px] text-center">
               <h2 className="text-[20px] font-semibold mt-[20px]">
                 {" "}
-                Pr. Dr. Mamun Ahmed
+                অধ্যাপক মোঃ মঈন উদ্দিন
               </h2>
-              <p className="text-[16px]">Pro Vice Chancellor (Academic)</p>
+              <p className="text-[16px]">প্রো-ভাইস চ্যান্সেলর (শিক্ষা)</p>
             </div>
           </div>
         ))}

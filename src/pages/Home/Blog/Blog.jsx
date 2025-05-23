@@ -27,37 +27,37 @@ const Blog = () => {
             image: image,
             title: "",
             description:
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque explicabo, temporibus accusamus tempora nam iusto nihil illo alias quis numquam.",
+              "একটি শ্রদ্ধা এবং শুভেচ্ছা অনুষ্ঠানের মুহূর্ত ধারণ করা হয়েছে এই ছবিতে। শিক্ষক, অভিভাবক ও ছাত্রছাত্রীরা একত্রিত হয়ে একটি শিক্ষার্থীকে ফুলের তোড়া দিয়ে শুভেচ্ছা জানাচ্ছেন। ছবির পেছনে একটি অফিস ঘরের পরিবেশ দেখা যাচ্ছে, যেখানে সম্মানিত শিক্ষক ও...",
           },
           {
             image: image1,
             title: "",
             description:
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque explicabo, temporibus accusamus tempora nam iusto nihil illo alias quis numquam.",
+              "একটি উৎসবমুখর পরিবেশে একটি মঞ্চের সামনে তোলা এই ছবিতে স্থানীয় নেতা এবং জনসাধারণকে বঙ্গবন্ধু শেখ মুজিবুর রহমানের জন্মদিন ও জাতীয় দিবস উদযাপন করতে দেখা যাচ্ছে। সন্ধর্বণ মডেল স্কুল এর ব্যানারসহ, বর্ণাঢ্য সাজসজ্জা এবং রঙিন বেলুনের ..",
           },
           {
             image: image2,
             title: "",
             description:
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque explicabo, temporibus accusamus tempora nam iusto nihil illo alias quis numquam.",
+              "এই ছবিতে সন্ধর্বণ মডেল স্কুল এর সামনে দাঁড়িয়ে শিক্ষার্থী, শিক্ষক ও অভিভাবকদের একটি দলকে দেখা যাচ্ছে। সবাই বিজয় চিহ্ন (ভি সাইন) প্রদর্শন করছেন, যা তাদের আনন্দ, গর্ব এবং ঐক্যকে প্রতিফলিত করে। ছবির পেছনে স্কুল ভবনের অংশ ও ব্যানার দৃশ্যমান, ...",
           },
           {
             image: image3,
             title: "",
             description:
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque explicabo, temporibus accusamus tempora nam iusto nihil illo alias quis numquam.",
+              "এই ছবিতে সন্ধর্বণ মডেল স্কুল এর সামনে দাঁড়িয়ে শিক্ষার্থী, শিক্ষক ও অভিভাবকদের একটি দলকে দেখা যাচ্ছে। সবাই বিজয় চিহ্ন (ভি সাইন) প্রদর্শন করছেন, যা তাদের আনন্দ, গর্ব এবং ঐক্যকে প্রতিফলিত করে। ছবির পেছনে স্কুল ভবনের অংশ ও ব্যানার দৃশ্যমান, ...",
           },
           {
             image: image4,
             title: "",
             description:
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque explicabo, temporibus accusamus tempora nam iusto nihil illo alias quis numquam.",
+              "একটি উৎসবমুখর পরিবেশে একটি মঞ্চের সামনে তোলা এই ছবিতে স্থানীয় নেতা এবং জনসাধারণকে বঙ্গবন্ধু শেখ মুজিবুর রহমানের জন্মদিন ও জাতীয় দিবস উদযাপন করতে দেখা যাচ্ছে। সন্ধর্বণ মডেল স্কুল এর ব্যানারসহ, বর্ণাঢ্য সাজসজ্জা এবং রঙিন বেলুনের...",
           },
           {
             image: image5,
             title: "",
             description:
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque explicabo, temporibus accusamus tempora nam iusto nihil illo alias quis numquam.",
+              "একটি শ্রদ্ধা এবং শুভেচ্ছা অনুষ্ঠানের মুহূর্ত ধারণ করা হয়েছে এই ছবিতে। শিক্ষক, অভিভাবক ও ছাত্রছাত্রীরা একত্রিত হয়ে একটি শিক্ষার্থীকে ফুলের তোড়া দিয়ে শুভেচ্ছা জানাচ্ছেন। ছবির পেছনে একটি অফিস ঘরের পরিবেশ দেখা যাচ্ছে, যেখানে সম্মানিত শিক্ষক ও ....",
           },
         ]?.map((item) => (
           <BlogCart item={item} />

@@ -56,10 +56,13 @@ const Banner = () => {
             />
 
             {/* Overlay Content */}
-            <div className="absolute inset-0 bg-[#00000085] bg-opacity-30 flex items-center justify-center">
-              <h1 className="text-white text-3xl font-bold">
-                Welcome to Our School
-              </h1>
+            <div className="absolute inset-0 bg-[#00000085] bg-opacity-30 flex items-center justify-center text-center text-white">
+              <div>
+                <h1 className="text-white text-[40px] font-bold">
+                  সকলকে স্বাগতম,
+                </h1>
+                <p>সপ্তবর্ণ মডেল স্কুলকে সারা বাংলাদেশের রোল মডেল করতে চাই</p>
+              </div>
             </div>
           </div>
         </SwiperSlide>
@@ -73,10 +76,13 @@ const Banner = () => {
             />
 
             {/* Overlay Content */}
-            <div className="absolute inset-0 bg-[#00000085] bg-opacity-30 flex items-center justify-center">
-              <h1 className="text-white text-3xl font-bold">
-                Welcome to Our School
-              </h1>
+            <div className="absolute inset-0 bg-[#00000085] bg-opacity-30 flex items-center justify-center text-center text-white">
+              <div>
+                <h1 className="text-white text-[40px] font-bold">
+                  সকলকে স্বাগতম,
+                </h1>
+                <p>সপ্তবর্ণ মডেল স্কুলকে সারা বাংলাদেশের রোল মডেল করতে চাই</p>
+              </div>
             </div>
           </div>
         </SwiperSlide>

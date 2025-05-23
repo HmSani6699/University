@@ -20,19 +20,22 @@ const About = () => {
         {/* ======> Left <===== */}
         <div className="lg:w-1/2">
           <h2 className="text-[30px] font-bold ">
-            Welcome to University of Dhaka
+            সপ্তবর্ণ মডেল স্কুলে আপনাকে স্বাগতম।
           </h2>
           <p>
-            On the first day of July 1921 the University of Dhaka opened its
-            doors to students with Sir P.J. Hartog as the first Vice-Chancellor
-            of the University. The University was set up in a picturesque part
-            of the city known as Ramna on 600 acres of land.The University
-            started its activities with 3 Faculties,12 Departments, 60 teachers,
-            877 students and 3 dormitories (Halls of Residence) for the
-            students. At present the University consists of 13 Faculties, 83
-            Departments, 12 Institutes, 20 residential halls, 3 hostels and more
-            than 56 Research Centres. The number of students and teachers has
-            risen to about 37018
+            সপ্তবর্ণ মডেল স্কুল একটি আধুনিক, নীতিনিষ্ঠ ও শিক্ষাবান্ধব
+            প্রতিষ্ঠান, যেখানে শিক্ষা শুধু পুঁথিগত জ্ঞান নয়—বরং একে জীবন গড়ার
+            উপযুক্ত হাতিয়ার হিসেবে গড়ে তোলা হয়। প্রতিষ্ঠার শুরু থেকেই আমরা
+            শিক্ষার্থীদের জন্য একটি নিরাপদ, সুশৃঙ্খল ও সৃজনশীল পরিবেশ নিশ্চিত
+            করার প্রতি সর্বোচ্চ গুরুত্ব দিয়ে আসছি। আমাদের লক্ষ্য হল প্রতিটি
+            শিশুর মধ্যে লুকিয়ে থাকা সম্ভাবনাকে আবিষ্কার করে তাকে একটি সুশিক্ষিত,
+            আত্মবিশ্বাসী ও নৈতিকতাসম্পন্ন মানুষ হিসেবে গড়ে তোলা। এ লক্ষ্যে আমরা
+            আধুনিক পাঠ্যক্রম, যুগোপযোগী প্রযুক্তি ও অভিজ্ঞ
+            শিক্ষক-শিক্ষিকাবৃন্দের মাধ্যমে একটি মানসম্মত শিক্ষার পরিবেশ নিশ্চিত
+            করে চলেছি। শিক্ষা, শৃঙ্খলা ও মূল্যবোধ—এই তিনটি স্তম্ভকে ভিত্তি করেই
+            এগিয়ে চলছে সপ্তবর্ণ মডেল স্কুলের দীপ্ত যাত্রা। আমরা বিশ্বাস
+            করি—আজকের শিক্ষার্থীই আগামী দিনের ভবিষ্যৎ, আর সেই ভবিষ্যতের জন্যই
+            আমরা গড়ে তুলছি একটি শিক্ষার আদর্শ স্থান—সপ্তবর্ণ মডেল স্কুল।
           </p>
         </div>
         {/* =====> Right <==== */}

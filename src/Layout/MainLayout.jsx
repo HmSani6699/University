@@ -17,7 +17,7 @@ const MainLayout = () => {
       <Banner />
       <div className="flex ">
         <div className="bg-[#4c9580] font-bold py-[6px] text-white px-[30px]">
-          Notice
+          নোটিশ
         </div>
         <Marquee className="text-[#4c9580]">
           শিক্ষা মানুষের জীবনের মৌলিক অধিকার এবং উন্নয়নের প্রধান হাতিয়ার। একজন

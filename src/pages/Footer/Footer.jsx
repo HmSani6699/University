@@ -20,9 +20,11 @@ const Footer = () => {
               </div>
             </div>
             <h2 className=" font-bold text-[25px] leading-[25px] mt-[20px]">
-              SOPTOBORNO MODEL SCHOOL
+              সপ্তবর্ণ মডেল স্কুল
             </h2>
-            <h2 className=" font-bold text-[20px] ">Dwariapur, Shahzadpur</h2>
+            <h2 className=" font-bold text-[20px] ">
+              ভেরুয়াদহ, শাহজাদপুর, সিরাজগঞ্জ
+            </h2>
             {/* ====> Social link <===== */}
             <div className="flex justify-center lg:justify-start gap-[15px] mt-[30px]">
               <div className="group hover:bg-[#07A698] h-[35px] w-[35px] flex items-center justify-center rounded-full bg-slate-200 transition-colors duration-500 cursor-pointer">
@@ -41,48 +43,49 @@ const Footer = () => {
           </div>
           {/* ======> Quick Info <====== */}
           <div className="lg:w-[40%] md:hidden lg:block w-full mt-[50px] lg:mt-0 md:mt-0">
-            <h2 className="text-[25px] font-semibold mb-[30px] ">Quick Info</h2>
+            <h2 className="text-[25px] font-semibold mb-[30px] ">দ্রুত তথ্য</h2>
 
-            <p className="text-[18px] mb-[10px] ">Technologies</p>
-            <p className="text-[18px] mb-[10px] ">Our Team</p>
-            <p className="text-[18px] mb-[10px] ">Portfolio</p>
-            <p className="text-[18px] mb-[10px] ">Career</p>
+            <p className="text-[18px] mb-[10px] ">হোম</p>
+            <p className="text-[18px] mb-[10px] ">আমাদের সম্পর্কে</p>
+            <p className="text-[18px] mb-[10px] ">ভর্তি</p>
+            <p className="text-[18px] mb-[10px] ">বৈশিষ্ট্য</p>
           </div>
         </div>
         <div className="lg:w-[40%] md:w-[100%] w-full lg:flex md:flex ">
           {/* =====> Md Device er jonno <===== */}
-          <div className="lg:w-[40%] hidden lg:hidden md:block w-full mt-[50px] lg:mt-0">
-            <h2 className="text-[25px] font-semibold mb-[30px] ">Quick Info</h2>
-            <p className="text-[18px] mb-[10px] ">Technologies</p>
-            <p className="text-[18px] mb-[10px] ">Our Team</p>
-            <p className="text-[18px] mb-[10px] ">Portfolio</p>
-            <p className="text-[18px] mb-[10px] ">Career</p>
-          </div>
+          {/* <div className="lg:w-[40%] md:hidden lg:block w-full mt-[50px] lg:mt-0 md:mt-0">
+            <h2 className="text-[25px] font-semibold mb-[30px] ">দ্রুত তথ্য</h2>
+
+            <p className="text-[18px] mb-[10px] ">হোম</p>
+            <p className="text-[18px] mb-[10px] ">আমাদের সম্পর্কে</p>
+            <p className="text-[18px] mb-[10px] ">ভর্তি</p>
+            <p className="text-[18px] mb-[10px] ">বৈশিষ্ট্য</p>
+          </div> */}
 
           {/* ======> Services <====== */}
           <div className="lg:w-[50%] w-full mt-[50px] lg:mt-0 ">
-            <h2 className="text-[25px] font-semibold mb-[30px] ">Services</h2>
-            <p className="text-[18px] mb-[10px] ">Digital/Social Marketing</p>
-            <p className="text-[18px] mb-[10px] ">Affordable SEO</p>
-            <p className="text-[18px] mb-[10px] ">e-Commerce</p>
-            <p className="text-[18px] mb-[10px] ">HRM System</p>
+            <h2 className="text-[25px] font-semibold mb-[30px] ">প্রতিষ্ঠান</h2>
+            <p className="text-[18px] mb-[10px] ">কেন্দ্র</p>
+            <p className="text-[18px] mb-[10px] ">বিভাগ</p>
+            <p className="text-[18px] mb-[10px] ">গবেষণা</p>
+            <p className="text-[18px] mb-[10px] ">লাইব্রেরি</p>
           </div>
           {/* ======> Contact us <====== */}
           <div className="lg:w-[50%] w-full mt-[50px] lg:mt-0 ">
             <h2 className="text-[25px] font-semibold mb-[30px] ">
-              Contact with us
+              যোগাযোগ করুন
             </h2>
             <p className="text-[18px] mb-[10px] ">
-              <span>Mobile: </span> 01707-096711
+              <span>মোবাইল: </span> ০১৭০৭-০৯৬৭১১
             </p>
             <p className="text-[18px] mb-[10px] ">
-              <span>Email: </span> sadiq@gmail.com
+              <span>ইমেইল: </span> info@gmail.com
             </p>
             <p className="text-[18px] mb-[10px] ">
-              <span>EMS QUERY : </span> 01707-096711
+              <span>ইএমএস প্রশ্ন : </span> ০১৭০৭-০৯৬৭১১
             </p>
             <p className="text-[18px] mb-[10px] ">
-              <span>SUPPORT : </span> 01707-096711
+              <span>সাপোর্ট : </span> ০১৭০৭-০৯৬৭১১
             </p>
           </div>
         </div>

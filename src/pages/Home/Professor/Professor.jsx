@@ -19,26 +19,26 @@ const Professor = () => {
       {/* Text Content */}
       <div className="text-center md:text-left">
         <h2 className="text-3xl font-bold text-gray-800">
-          Message from the{" "}
-          <span className="text-[#4c9580]">Vice Princhipal</span>
+          উপাধ্যক্ষের
+          <span className="text-[#4c9580]"> শুভ বার্তা</span>
         </h2>
         <p className="text-xl mt-4 font-medium text-gray-800">
-          Professor Dr. Md. Jakir ali
+          অধ্যাপক মোঃ মঈন উদ্দিন
         </p>
-        <p className="text-[#4c9580] font-semibold mt-1">Vice Chancellor</p>
+        <p className="text-[#4c9580] font-semibold mt-1">উপাচার্য</p>
         <p>
-          Welcome to the official website of the University of Dhaka. It is an
-          honor for me to serve as the Vice Chancellor of University of Dhaka
-          and I hope that this website provides you with the necessary
-          information that will meet your academic, research, and administrative
-          needs.&nbsp; Established in 1921, the University of Dhaka has always
-          been an integral part of the history of Bangladesh. In every critical
-          juncture of the nation’s journey, be it the ...
+          সম্মানিত অভিভাবকবৃন্দ, প্রিয় শিক্ষক, শিক্ষার্থী ও শুভানুধ্যায়ীবৃন্দ,
+          আসসালামু আলাইকুম ও رحمت الله। একটি শিক্ষাপ্রতিষ্ঠান কেবল জ্ঞান অর্জনের
+          কেন্দ্র নয়, এটি নৈতিকতা, মূল্যবোধ ও মানবিক গুণাবলির বিকাশের ক্ষেত্রও
+          বটে। আমাদের প্রতিষ্ঠানে আমরা প্রতিটি শিক্ষার্থীকে একজন আদর্শ নাগরিক
+          হিসেবে গড়ে তোলার নিরন্তর প্রচেষ্টা চালিয়ে যাচ্ছি। আমি দৃঢ়ভাবে বিশ্বাস
+          করি, সুশিক্ষার আলোয় আলোকিত হয়ে আমাদের শিক্ষার্থীরা আগামী দিনে সমাজ ও
+          দেশের উন্নয়নে গুরুত্বপূর্ণ ভূমিকা রাখবে। ...
         </p>
 
         <div className=" flex items-end justify-end pr-[20px]">
           <button className="border border-[#4c9580] mt-[50px] px-[20px] py-[6px] bg-[#4c9580]  rounded-full hover:bg-[#4c9580] text-white ">
-            Read more ...
+            আরও পড়ুন ...
           </button>
         </div>
       </div>

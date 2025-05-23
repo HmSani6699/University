@@ -18,10 +18,10 @@ const BlogCart = ({ item }) => {
         <div className="flex items-center justify-between mt-[10px]">
           <div className="flex items-center gap-[4px]">
             <FaRegCalendarAlt />
-            <p>23 May 2025</p>
+            <p>২৩ মে ২০২৫</p>
           </div>
           <button className="border bg-[#4c9580] text-white rounded-full py-[6px] px-[20px]">
-            Read More....
+            আরও পড়ুন
           </button>
         </div>
       </div>

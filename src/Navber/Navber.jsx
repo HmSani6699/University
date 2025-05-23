@@ -21,7 +21,7 @@ const Navber = () => {
             <img className="h-[70px] w-[70px]" src={logo} alt="logo" />
           </div>
           <div>
-            <h2 className="text-[#4c9580] font-bold text-[30px] leading-[25px]">
+            <h2 className="text-[#4c9580] font-bold text-[30px] leading-[35px]">
               সপ্তবর্ণ মডেল স্কুল
             </h2>
             <h2 className="text-[#4c9580] font-bold text-[20px] ">
