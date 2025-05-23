@@ -1,12 +1,13 @@
 import { FaBook, FaFacebook, FaYoutube } from "react-icons/fa";
 import logo from "../../public/logo.png";
-import { MdEmail } from "react-icons/md";
-import { IoIosArrowDown } from "react-icons/io";
+import { MdEmail, MdLogin } from "react-icons/md";
+import { IoIosArrowDown, IoMdLogIn } from "react-icons/io";
 import l1 from "../../public/l1.jpeg";
 import l2 from "../../public/l2.jpeg";
 import l3 from "../../public/l3.jpeg";
 import l4 from "../../public/l4.jpeg";
 import l5 from "../../public/l5.jpeg";
+import Marquee from "react-fast-marquee";
 
 const Navber = () => {
   return (
@@ -42,6 +43,10 @@ const Navber = () => {
             <MdEmail />
             Web Email
           </h2>
+          <h2 className="flex items-center gap-[6px] text-[#4c9580]">
+            <IoMdLogIn />
+            Login
+          </h2>
         </div>
       </div>
       {/* ====> Main menuber <====== */}
@@ -49,12 +54,14 @@ const Navber = () => {
         <div className="max-w-[1200px] mx-auto flex gap-[30px]">
           {/* Home Dropdown */}
           <div className="relative">
-            <h2 className="flex items-center gap-[4px] cursor-pointer">Home</h2>
+            <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
+              Home
+            </h2>
           </div>
 
           {/* About Dropdown */}
           <div className="relative group inline-block">
-            <h2 className="flex items-center gap-[4px] cursor-pointer">
+            <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
               About <IoIosArrowDown />
             </h2>
 
@@ -73,7 +80,7 @@ const Navber = () => {
           </div>
           {/* admssion */}
           <div className="relative group inline-block">
-            <h2 className="flex items-center gap-[4px] cursor-pointer">
+            <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
               Admission <IoIosArrowDown />
             </h2>
 
@@ -202,7 +209,7 @@ const Navber = () => {
 
           {/* ===> feature <=== */}
           <div className="relative group inline-block">
-            <h2 className="flex items-center gap-[4px] cursor-pointer">
+            <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
               Feature <IoIosArrowDown />
             </h2>
 
@@ -263,7 +270,7 @@ const Navber = () => {
           </div>
           {/* Instuitutes Dropdown */}
           <div className="relative group inline-block">
-            <h2 className="flex items-center gap-[4px] cursor-pointer">
+            <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
               Instuitutes <IoIosArrowDown />
             </h2>
 
@@ -282,7 +289,7 @@ const Navber = () => {
           </div>
           {/* Center */}
           <div className="relative group inline-block">
-            <h2 className="flex items-center gap-[4px] cursor-pointer">
+            <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
               Center <IoIosArrowDown />
             </h2>
 
@@ -306,7 +313,7 @@ const Navber = () => {
           </div>
           {/* admssion */}
           <div className="relative group inline-block">
-            <h2 className="flex items-center gap-[4px] cursor-pointer">
+            <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
               Deartments <IoIosArrowDown />
             </h2>
 
@@ -434,7 +441,7 @@ const Navber = () => {
           </div>
           {/* ===> feature <=== */}
           <div className="relative group inline-block">
-            <h2 className="flex items-center gap-[4px] cursor-pointer">
+            <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
               Research <IoIosArrowDown />
             </h2>
 
@@ -495,7 +502,7 @@ const Navber = () => {
           </div>
           {/* ===> Library <=== */}
           <div className="relative group inline-block">
-            <h2 className="flex items-center gap-[4px] cursor-pointer">
+            <h2 className="flex items-center gap-[4px] cursor-pointer font-semibold">
               Library <IoIosArrowDown />
             </h2>
 
@@ -525,7 +532,7 @@ const Navber = () => {
           </div>
           {/* Notice Dropdown */}
           <div className="relative group inline-block">
-            <h2 className="flex items-center gap-[4px] cursor-pointer">
+            <h2 className="flex items-center gap-[4px] cursor-pointe font-semibold">
               Notice <IoIosArrowDown />
             </h2>
 
@@ -542,6 +549,22 @@ const Navber = () => {
           </div>
         </div>
       </div>
+      {/* ===> Marque <==== */}
+
+      {/* <div className="flex ">
+        <div className="bg-blue-600 font-bold p-[10px] text-white">Notice</div>
+        <Marquee>
+          শিক্ষা মানুষের জীবনের মৌলিক অধিকার এবং উন্নয়নের প্রধান হাতিয়ার। একজন
+          শিক্ষিত ব্যক্তি কেবল নিজের উন্নতি নয়, সমাজ ও দেশের উন্নয়নেও ভূমিকা
+          রাখতে পারে। শিক্ষার মাধ্যমে মানুষ তার জ্ঞান, দক্ষতা ও চিন্তাশক্তি
+          বিকাশ করতে পারে। একটি উন্নত জাতি গঠনের জন্য প্রয়োজন সঠিক ও মানসম্মত
+          শিক্ষা ব্যবস্থা। বর্তমানে তথ্যপ্রযুক্তি শিক্ষার ক্ষেত্রে এক নতুন
+          দিগন্ত উন্মোচন করেছে। অনলাইন শিক্ষা, ডিজিটাল ক্লাসরুম ও ই-লার্নিং
+          পদ্ধতির কারণে শিক্ষার্থীরা এখন আরও সহজে জ্ঞান অর্জন করতে পারছে। শিক্ষা
+          শুধু পুঁথিগত বিদ্যার মধ্যে সীমাবদ্ধ নয়, নৈতিক শিক্ষা, মানবিকতা,
+          দেশপ্রেম ও দায়িত্ববোধও একজন শিক্ষার্থীর মধ্যে গড়ে তুলতে হবে।
+        </Marquee>
+      </div> */}
     </div>
   );
 };
