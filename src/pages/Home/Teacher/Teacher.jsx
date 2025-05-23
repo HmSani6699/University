@@ -1,5 +1,7 @@
 import { BiSolidZap } from "react-icons/bi";
-import teacher from "../../../../public/teacher1.png";
+import teacher from "../../../../public/teacher.png";
+import teacher1 from "../../../../public/teacher2.png";
+import teacher2 from "../../../../public/p.png";
 import Animation from "../../../Component/Animation/Animation";
 
 const Teacher = () => {
@@ -23,23 +25,60 @@ const Teacher = () => {
       </Animation>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 max-w-[850px] mx-auto gap-[30px] mt-[40px]">
-        {[1, 2, 3, 4, 5, 6].map((item) => (
+        {[
+          {
+            id: 1,
+            img: teacher2,
+            name: "মোঃ মঈন উদ্দিন",
+            degeneration: "প্রধান শিক্ষক",
+          },
+          {
+            id: 2,
+            img: teacher1,
+            name: " নিরঞ্জন পাল",
+            degeneration: "পরিচালক",
+          },
+          {
+            id: 3,
+            img: teacher,
+            name: " মোঃ তসলিম উদ্দিন",
+            degeneration: "পরিচালক",
+          },
+          {
+            id: 2,
+            img: teacher1,
+            name: " নিরঞ্জন পাল",
+            degeneration: "পরিচালক",
+          },
+          {
+            id: 3,
+            img: teacher,
+            name: " মোঃ তসলিম উদ্দিন",
+            degeneration: "পরিচালক",
+          },
+
+          {
+            id: 1,
+            img: teacher2,
+            name: "মোঃ মঈন উদ্দিন",
+            degeneration: "প্রধান শিক্ষক",
+          },
+        ].map((item) => (
           <Animation>
             {" "}
             <div className="flex flex-col items-center">
               <div className="h-[100px] w-[100px] rounded-full bg-[#4c9580] -mb-[30px] relative z-40 border-[#f5f5f5] border-2">
                 <img
                   className="h-[100px] w-[100px] rounded-full bg-[#4c9580] border-[#f5f5f5] border-2"
-                  src={teacher}
+                  src={item?.img}
                   alt="teacher"
                 />
               </div>
-              <div className="border  border-gray-300 bg-white shadow-lg rounded-[6px] p-[20px] text-center">
+              <div className="border  border-gray-300 bg-white shadow-lg rounded-[6px] p-[20px] text-center w-[400px]">
                 <h2 className="text-[20px] font-semibold mt-[20px]">
-                  {" "}
-                  অধ্যাপক মোঃ মঈন উদ্দিন
+                  {item?.name}
                 </h2>
-                <p className="text-[16px]">প্রো-ভাইস চ্যান্সেলর (শিক্ষা)</p>
+                <p className="text-[16px]">{item?.degeneration}</p>
               </div>
             </div>
           </Animation>

@@ -3,7 +3,7 @@ import g1 from "../../../../public/g1.jpg";
 import g2 from "../../../../public/g2.jpg";
 import g3 from "../../../../public/g3.jpg";
 import g4 from "../../../../public/g4.jpg";
-import g5 from "../../../../public/g5.jpg";
+import g5 from "../../../../public/cart4.jpg";
 import g6 from "../../../../public/g6.jpg";
 import GalleryCart from "../../../Component/GalleryCart/GalleryCart";
 import Animation from "../../../Component/Animation/Animation";

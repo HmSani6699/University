@@ -9,6 +9,7 @@ import Footer from "../pages/Footer/Footer";
 import About from "../pages/Home/About/About";
 import Category from "../pages/Home/Category/Category";
 import Gallery from "../pages/Home/Gallery/Gallery";
+import VideoGallery from "../pages/Home/VideoGallery/VideoGallery";
 
 const MainLayout = () => {
   return (
@@ -38,6 +39,7 @@ const MainLayout = () => {
       <About />
       <Category />
       <Gallery />
+      <VideoGallery />
       <Footer />
     </div>
   );

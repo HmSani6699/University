@@ -1,4 +1,5 @@
-import image from "../../../../public/teacher1.png";
+// import image from "../../../../public/teacher1.png";
+import image from "../../../../public/p.png";
 import Animation from "../../../Component/Animation/Animation";
 
 const Professor = () => {
@@ -22,13 +23,12 @@ const Professor = () => {
         {/* Text Content */}
         <div className="text-center md:text-left">
           <h2 className="text-3xl font-bold text-gray-800">
-            উপাধ্যক্ষের
+            প্রধান শিক্ষক এর
             <span className="text-[#4c9580]"> শুভ বার্তা</span>
           </h2>
           <p className="text-xl mt-4 font-medium text-gray-800">
-            অধ্যাপক মোঃ মঈন উদ্দিন
+            মোঃ মঈন উদ্দিন
           </p>
-          <p className="text-[#4c9580] font-semibold mt-1">উপাচার্য</p>
           <p>
             সম্মানিত অভিভাবকবৃন্দ, প্রিয় শিক্ষক, শিক্ষার্থী ও শুভানুধ্যায়ীবৃন্দ,
             আসসালামু আলাইকুম ও رحمت الله। একটি শিক্ষাপ্রতিষ্ঠান কেবল জ্ঞান

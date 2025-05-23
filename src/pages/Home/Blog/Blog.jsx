@@ -56,13 +56,13 @@ const Blog = () => {
             <div className="bg-[#07a69826] p-[4px] rounded-full">
               <BiSolidZap className="text-[#07A698]" />
             </div>
-            সংবাদ
+            ইভেন্ট
           </button>
         </div>
       </Animation>
       <Animation>
         <p className="font-Baloo text-[#1D5276] mt-[20px] text-[30px] text-center  leading-[28px] font-[600]">
-          প্রতিদিনের সর্বশেষ সংবাদ
+          প্রতিদিনের ইভেন্টসমূহ
         </p>
       </Animation>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-[35px] mt-[50px] max-w-[1100px] mx-auto">
