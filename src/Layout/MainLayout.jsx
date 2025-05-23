@@ -8,6 +8,7 @@ import Blog from "../pages/Home/Blog/Blog";
 import Footer from "../pages/Footer/Footer";
 import About from "../pages/Home/About/About";
 import Category from "../pages/Home/Category/Category";
+import Gallery from "../pages/Home/Gallery/Gallery";
 
 const MainLayout = () => {
   return (
@@ -36,6 +37,7 @@ const MainLayout = () => {
       <Blog />
       <About />
       <Category />
+      <Gallery />
       <Footer />
     </div>
   );
