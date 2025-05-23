@@ -10,3 +10,40 @@
     /* background: #f2f4f7; */
   }
 }
+
+/* App.css */
+.custom-swiper-nav .swiper-button-next,
+.custom-swiper-nav .swiper-button-prev {
+  color: #005639 !important; /* Tailwind 'emerald-500' */
+  background-color: rgba(255, 255, 255, 0.7); /* optional */
+  height: 50px;
+  width: 50px;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+}
+
+.custom-swiper-nav .swiper-button-next:hover,
+.custom-swiper-nav .swiper-button-prev:hover {
+  background-color: rgba(16, 185, 129, 0.9); /* emerald-500 */
+  color: white;
+}
+
+.custom-swiper-nav .swiper-button-next::after,
+.custom-swiper-nav .swiper-button-prev::after {
+  font-size: 20px !important; /* Adjust size as needed */
+  color: #005639; /* Change icon color if needed */
+  font-weight: bold;
+}
+
+/* App.css */
+.my-swiper .swiper-pagination-bullet {
+  background-color: #e5e7eb; /* gray-300 */
+  width: 30px;
+  border-radius: 4px;
+}
+
+.my-swiper .swiper-pagination-bullet-active {
+  background-color: #10b981; /* emerald-500 */
+  width: 50px;
+  border-radius: 4px;
+}
