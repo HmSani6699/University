@@ -7,6 +7,7 @@ import CountDown from "../pages/Home/CountDown/CountDown";
 import Blog from "../pages/Home/Blog/Blog";
 import Footer from "../pages/Footer/Footer";
 import About from "../pages/Home/About/About";
+import Category from "../pages/Home/Category/Category";
 
 const MainLayout = () => {
   return (
@@ -34,6 +35,7 @@ const MainLayout = () => {
       <CountDown />
       <Blog />
       <About />
+      <Category />
       <Footer />
     </div>
   );
