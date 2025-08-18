@@ -33,7 +33,7 @@ const Navber = () => {
           </div>
         </div>
         {/* right */}
-        <div className="flex items-center gap-[30px] lg:block hidden">
+        <div className=" items-center gap-[30px] lg:flex hidden">
           <Link
             to={
               "https://www.facebook.com/soptobornomodelschool?mibextid=ZbWKwL"
