@@ -11,12 +11,13 @@ import g6 from "../../public/g6.jpg";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router";
 import { FiAlertCircle } from "react-icons/fi";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navber = () => {
   return (
     <div className="">
       {/* ====> Top menuver  <==== */}
-      <div className="flex items-center justify-between  max-w-[1200px] mx-auto mt-[15px] mb-[10px]">
+      <div className="lg:flex items-center justify-between  max-w-[1200px] mx-auto mt-[15px] mb-[10px] p-[10px] lg:p-0">
         {/* left */}
         <div className="flex items-center gap-[10px]">
           <div className="h-[70px] w-[70px]">
@@ -32,7 +33,7 @@ const Navber = () => {
           </div>
         </div>
         {/* right */}
-        <div className="flex items-center gap-[30px]">
+        <div className="flex items-center gap-[30px] lg:block hidden">
           <Link
             to={
               "https://www.facebook.com/soptobornomodelschool?mibextid=ZbWKwL"
@@ -62,7 +63,7 @@ const Navber = () => {
         </div>
       </div>
       {/* ====> Main menuber <====== */}
-      <div className="bg-[#4c9580] text-white py-[15px] flex items-center justify-center ">
+      <div className="bg-[#4c9580] text-white py-[15px]  items-center justify-center lg:flex hidden">
         <div className="max-w-[1200px] mx-auto flex gap-[30px]">
           {/* Home Dropdown */}
           <div className="relative">
@@ -519,6 +520,10 @@ const Navber = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="bg-[#4c9580] text-white py-[15px]  items-end justify-end flex lg:hidden pr-[15px]">
+        <GiHamburgerMenu className="text-[35px]" />
       </div>
       {/* ===> Marque <==== */}
 

@@ -10,7 +10,7 @@ import Animation from "../../../Component/Animation/Animation";
 
 const Gallery = () => {
   return (
-    <div className="my-[50px]">
+    <div className="my-[50px] p-[10px]">
       <div className="flex items-center justify-center">
         <button className="bg-white flex p-[5px]  rounded-full gap-[8px] pr-[10px] text-[14px] ">
           <div className="bg-[#07a69826] p-[4px] rounded-full">

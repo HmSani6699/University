@@ -5,7 +5,7 @@ const CountDown = () => {
   return (
     <div className="w-full mt-[50px] h-[400px]">
       <div className="parallax_scrolling  ">
-        <div className="max-w-[1000px] mx-auto flex justify-between items-center pt-[110px]">
+        <div className="max-w-[1000px] mx-auto flex justify-between items-center pt-[110px] overflow-auto">
           <div className=" text-white ">
             <div className="text-center flex flex-col items-center">
               <div className="h-[90px] w-[90px] rounded-full bg-[#d1d5dc61] flex items-center justify-center border mb-[10px]">

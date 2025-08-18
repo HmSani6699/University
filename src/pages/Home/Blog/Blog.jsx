@@ -49,7 +49,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className=" bg-white pt-[60px] pb-[50px]">
+    <div className=" bg-white pt-[60px] pb-[50px] p-[10px]">
       <Animation>
         <div className="flex items-center justify-center">
           <button className="bg-white flex p-[5px]  rounded-full gap-[8px] pr-[10px] text-[14px] ">

@@ -5,7 +5,7 @@ import Animation from "../../../Component/Animation/Animation";
 
 const About = () => {
   return (
-    <div className="my-[50px]">
+    <div className="my-[50px] p-[10px]">
       <Animation>
         {" "}
         <div className="flex items-center justify-center">
@@ -23,7 +23,7 @@ const About = () => {
           আমাদের সম্পর্কে
         </p>
       </Animation>
-      <div className="max-w-[1200px] mx-auto flex items-center gap-[40px] h-[400px] mt-[30px]">
+      <div className="max-w-[1200px] mx-auto lg:flex items-center gap-[40px] h-[400px] mt-[30px]">
         {/* ======> Left <===== */}
         <div className="lg:w-1/2">
           <Animation>

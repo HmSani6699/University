@@ -14,7 +14,7 @@ import Animation from "../../../../Component/Animation/Animation";
 
 const Banner = () => {
   return (
-    <div className="w-full h-[500px] ">
+    <div className="w-full h-[300px] lg:h-[500px] ">
       <Swiper
         spaceBetween={30}
         effect={"fade"}
@@ -28,7 +28,7 @@ const Banner = () => {
         className="mySwiper custom-swiper-nav my-swiper"
       >
         <SwiperSlide>
-          <div className="relative h-[500px] w-full overflow-hidden">
+          <div className="relative lg:h-[500px] h-[300px] w-full overflow-hidden">
             {/* Blurred Background Image */}
             <img
               src={school}
@@ -49,7 +49,7 @@ const Banner = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-[500px] w-full overflow-hidden">
+          <div className="relative lg:h-[500px] h-[300px] w-full overflow-hidden">
             {/* Blurred Background Image */}
             <img
               src={schoo2}
@@ -70,7 +70,7 @@ const Banner = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-[500px] w-full overflow-hidden">
+          <div className="relative lg:h-[500px] h-[300px] w-full overflow-hidden">
             {/* Blurred Background Image */}
             <img
               src={schoo3}
